@@ -34,7 +34,7 @@ const projects = [
   {
     name: "Personal site",
     description: "One-page portfolio linking to my projects.",
-    status: "Live",
+    status: "Maintain",
     startDate: new Date("2026-08-07"),
     currentMilestone: "Built and deployed 7 Aug.",
   },

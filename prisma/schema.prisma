@@ -18,7 +18,9 @@ model Project {
   description String
   purpose     String?
   // SQLite has no native enum type, so Prisma stores this as plain text.
-  // Values in use: "Active", "Live", "Parked".
+  // Standard values (Brief section 12): "Active", "Maintain", "Paused",
+  // "Parked", "Killed". Deliberately not a hard enum, so this can grow
+  // without a migration.
   status           String
   currentObjective String?
   currentMilestone String?
