@@ -50,6 +50,22 @@ const projects = [
     status: "Parked",
     currentMilestone: "Specced, not started.",
   },
+  {
+    name: "Boiler Brief",
+    description:
+      "Homeowner and landlord tool that translates gas safety certificates into plain English.",
+    status: "Parked",
+  },
+  {
+    name: "The Boxing Brief",
+    description: "Boxing news summaries, same format as The Liverpool Brief.",
+    status: "Parked",
+  },
+  {
+    name: "Stock Screener",
+    description: "Practice project screening for undervalued small-caps.",
+    status: "Parked",
+  },
 ];
 
 async function main() {
