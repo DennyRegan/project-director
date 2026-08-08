@@ -9,7 +9,7 @@ generator client {
 }
 
 datasource db {
-  provider = "sqlite"
+  provider = "postgresql"
 }
 
 model Project {
@@ -17,10 +17,9 @@ model Project {
   name        String
   description String
   purpose     String?
-  // SQLite has no native enum type, so Prisma stores this as plain text.
-  // Standard values (Brief section 12): "Active", "Maintain", "Paused",
-  // "Parked", "Killed". Deliberately not a hard enum, so this can grow
-  // without a migration.
+  // Plain text by choice, not a Postgres enum — standard values (Brief
+  // section 12): "Active", "Maintain", "Paused", "Parked", "Killed". This
+  // way the vocabulary can grow without a migration.
   status           String
   currentObjective String?
   currentMilestone String?
