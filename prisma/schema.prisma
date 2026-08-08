@@ -16,11 +16,16 @@ model Project {
   id          Int      @id @default(autoincrement())
   name        String
   description String
+  purpose     String?
   // SQLite has no native enum type, so Prisma stores this as plain text.
   // Values in use: "Active", "Live", "Parked".
-  status      String
-  notes       String?
-  startDate   DateTime?
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
+  status           String
+  currentObjective String?
+  currentMilestone String?
+  evidenceSoFar    String?
+  biggestProblem   String?
+  nextMilestone    String?
+  startDate        DateTime?
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
 }

@@ -14,43 +14,41 @@ const projects = [
     description: "Liverpool FC news and transfer briefings.",
     status: "Active",
     startDate: new Date("2026-08-02"),
-    notes:
-      "Current objective: test distribution. Evidence: 92 visits, 222 page views, 3 followers, no distribution attempted until 7 Aug.",
+    currentObjective: "Test distribution.",
+    evidenceSoFar:
+      "92 visits, 222 page views, 3 followers, no distribution attempted until 7 Aug.",
   },
   {
     name: "Project Compound",
     description: "Personal habit, nutrition and training tracker.",
     status: "Active",
-    startDate: null,
-    notes: "In testing ahead of App Store release, expected early September.",
+    currentMilestone: "In testing ahead of App Store release.",
+    nextMilestone: "App Store release, expected early September.",
   },
   {
     name: "AI Development Coach",
     description: "Teaches AI fundamentals to people from a non-technical background.",
     status: "Active",
-    startDate: null,
-    notes: "Low priority — a learning vehicle rather than a main project.",
+    purpose: "Low priority — a learning vehicle rather than a main project.",
   },
   {
     name: "Personal site",
     description: "One-page portfolio linking to my projects.",
     status: "Live",
     startDate: new Date("2026-08-07"),
-    notes: "Built and deployed 7 Aug.",
+    currentMilestone: "Built and deployed 7 Aug.",
   },
   {
     name: "Project Director",
     description: "This app.",
     status: "Active",
     startDate: new Date("2026-08-07"),
-    notes: null,
   },
   {
     name: "AI Code Reviewer",
     description: "Reviews AI-generated code and returns ranked issues with hints.",
     status: "Parked",
-    startDate: null,
-    notes: "Specced, not started.",
+    currentMilestone: "Specced, not started.",
   },
 ];
 
